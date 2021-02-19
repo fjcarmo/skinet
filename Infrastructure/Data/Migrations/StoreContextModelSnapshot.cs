@@ -51,8 +51,8 @@ namespace Infrastructure.Data.Migrations
                     b.Property<int?>("DeliveryMethodId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTimeOffset>("OrderDate")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("OrderDate")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("PaymentIntentId")
                         .HasColumnType("TEXT");
@@ -174,9 +174,6 @@ namespace Infrastructure.Data.Migrations
                             b1.Property<string>("City")
                                 .HasColumnType("TEXT");
 
-                            b1.Property<string>("Country")
-                                .HasColumnType("TEXT");
-
                             b1.Property<string>("FirstName")
                                 .HasColumnType("TEXT");
 
@@ -189,7 +186,7 @@ namespace Infrastructure.Data.Migrations
                             b1.Property<string>("Street")
                                 .HasColumnType("TEXT");
 
-                            b1.Property<string>("ZipCode")
+                            b1.Property<string>("Zipcode")
                                 .HasColumnType("TEXT");
 
                             b1.HasKey("OrderId");
